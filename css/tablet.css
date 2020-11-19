@@ -1,0 +1,21 @@
+/* min-width: 930px, apartir de 930 en adelante aplica lo siguiente */
+.main-tables-container {
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+    margin-top: 6.3rem;
+}
+
+.product-cards--container {
+    display: flex;  /* uno enseguida del otro en forma horizontal (--) */
+    flex-wrap: wrap; /* uno debajo del otro */
+    width: 930px;
+    margin: 0 auto;
+}
+
+.plans-container--slider {
+    justify-content: center; 
+    overflow-x: hidden;   
+}
+
+

@@ -1,0 +1,128 @@
+:root {
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+}
+
+.main-product-detail {
+    position: relative; /* porque hay posicion absoluta en el logo */
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+
+.product-detail--batata-logo {
+    /* position: absolute: busca la primera posicion relativa que encuentre por eso se puso en la caja padre directo para que se base en este, sino estuviera en la caja padre lo buscaria en otra etiqueta mas cercana como el main. Esto sirve para evitar comportamientos raros */
+    position: absolute;
+    top: -12px; 
+    left: calc(50% - 20px);  /* tambien se puede posicionar con flex */
+    width: 40px;
+    height: 25px;
+    background-image:  url('../assets/icons/batata.svg');
+}
+
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 50px 0 auto;
+    text-align: center;
+}
+
+.product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product-detail--card {
+    /* border: 1px solid wheat; */
+    width: 90%;
+    min-height: 158px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+/* icono tarjeta */
+.product-detail--card .icon-card {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* iconos */
+.clock {
+    background-image: url('../assets/icons/clock.svg');    
+}
+.eye {
+    background-image: url('../assets/icons/eye.svg');    
+}
+.dollar {
+    background-image: url('../assets/icons/dollar-sign.svg');    
+}
+.circle {
+    background-image: url('../assets/icons/check-circle.svg');    
+}
+
+.product--card-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.product--card-body {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+
+/* Imagen de la mujer crespa */
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;
+    background-image: url('../assets/img/crespita.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.bitcoin-img-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
